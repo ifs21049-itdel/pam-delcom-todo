@@ -7,12 +7,12 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import com.ifs18005.delcomtodo.data.remote.response.DataUserResponse
-import com.ifs21043.delcomtodo.presentation.login.LoginActivity
 import com.ifs21049.delcomtodo.R
 import com.ifs21049.delcomtodo.data.remote.MyResult
+import com.ifs21049.delcomtodo.data.remote.response.DataUserResponse
 import com.ifs21049.delcomtodo.databinding.ActivityProfileBinding
 import com.ifs21049.delcomtodo.presentation.ViewModelFactory
+import com.ifs21049.delcomtodo.presentation.login.LoginActivity
 
 class ProfileActivity : AppCompatActivity() {
     private lateinit var binding: ActivityProfileBinding

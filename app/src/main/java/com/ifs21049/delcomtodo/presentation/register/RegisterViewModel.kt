@@ -1,10 +1,10 @@
-package com.ifs21023.delcomtodo.presentation.register
+package com.ifs21049.delcomtodo.presentation.register
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
-import com.ifs18005.delcomtodo.data.remote.response.DelcomResponse
 import com.ifs21049.delcomtodo.data.remote.MyResult
+import com.ifs21049.delcomtodo.data.remote.response.DelcomResponse
 import com.ifs21049.delcomtodo.data.repository.AuthRepository
 import com.ifs21049.delcomtodo.presentation.ViewModelFactory
 

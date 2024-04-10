@@ -3,7 +3,6 @@ package com.ifs21049.delcomtodo.presentation
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.ifs21023.delcomtodo.presentation.register.RegisterViewModel
 import com.ifs21049.delcomtodo.data.repository.AuthRepository
 import com.ifs21049.delcomtodo.data.repository.TodoRepository
 import com.ifs21049.delcomtodo.data.repository.UserRepository
@@ -11,6 +10,9 @@ import com.ifs21049.delcomtodo.di.Injection
 import com.ifs21049.delcomtodo.presentation.login.LoginViewModel
 import com.ifs21049.delcomtodo.presentation.main.MainViewModel
 import com.ifs21049.delcomtodo.presentation.profile.ProfileViewModel
+import com.ifs21049.delcomtodo.presentation.register.RegisterViewModel
+import com.ifs21049.delcomtodo.presentation.todo.TodoViewModel
+
 class ViewModelFactory(
     private val authRepository: AuthRepository,
     private val userRepository: UserRepository,
@@ -39,6 +41,11 @@ class ViewModelFactory(
             modelClass.isAssignableFrom(ProfileViewModel::class.java) -> {
                 ProfileViewModel
                     .getInstance(authRepository, userRepository) as T
+            }
+
+            modelClass.isAssignableFrom(TodoViewModel::class.java) -> {
+                TodoViewModel
+                    .getInstance(todoRepository) as T
             }
 
             else -> throw IllegalArgumentException(

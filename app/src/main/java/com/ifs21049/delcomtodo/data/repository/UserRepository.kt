@@ -1,8 +1,8 @@
 package com.ifs21049.delcomtodo.data.repository
 
 import com.google.gson.Gson
-import com.ifs18005.delcomtodo.data.remote.response.DelcomResponse
 import com.ifs21049.delcomtodo.data.remote.MyResult
+import com.ifs21049.delcomtodo.data.remote.response.DelcomResponse
 import com.ifs21049.delcomtodo.data.remote.retrofit.IApiService
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
@@ -10,6 +10,7 @@ import retrofit2.HttpException
 class UserRepository private constructor(
     private val apiService: IApiService,
 ) {
+
     fun getMe() = flow {
         emit(MyResult.Loading)
         try {
@@ -27,6 +28,7 @@ class UserRepository private constructor(
             )
         }
     }
+
     companion object {
         @Volatile
         private var INSTANCE: UserRepository? = null

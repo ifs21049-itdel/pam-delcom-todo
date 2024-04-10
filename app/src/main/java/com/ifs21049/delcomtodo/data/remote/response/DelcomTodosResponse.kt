@@ -1,4 +1,4 @@
-package com.ifs18005.delcomtodo.data.remote.response
+package com.ifs21049.delcomtodo.data.remote.response
 
 import com.google.gson.annotations.SerializedName
 

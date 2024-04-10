@@ -1,4 +1,4 @@
-package com.ifs21043.delcomtodo.presentation.login
+package com.ifs21049.delcomtodo.presentation.login
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,7 +11,6 @@ import com.ifs21049.delcomtodo.data.pref.UserModel
 import com.ifs21049.delcomtodo.data.remote.MyResult
 import com.ifs21049.delcomtodo.databinding.ActivityLoginBinding
 import com.ifs21049.delcomtodo.presentation.ViewModelFactory
-import com.ifs21049.delcomtodo.presentation.login.LoginViewModel
 import com.ifs21049.delcomtodo.presentation.main.MainActivity
 import com.ifs21049.delcomtodo.presentation.register.RegisterActivity
 import kotlinx.coroutines.launch
